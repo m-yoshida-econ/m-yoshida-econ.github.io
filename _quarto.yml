@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: _site
+  post-render: scripts/strip_generator.sh
+  resources:
+    - cv.pdf
+    - papers/
+
+website:
+  title: "Masahiro Yoshida"
+  site-url: https://m-yoshida.com
+  description: "Masahiro Yoshida, Associate Professor of Economics, Waseda University. Labor economics, climate and labor markets, automation."
+  favicon: img/favicon.svg
+  navbar:
+    pinned: false
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "CV"
+        href: cv.qmd
+    right:
+      - icon: envelope
+        href: "mailto:m.yoshida@waseda.jp"
+        aria-label: Email
+      - icon: github
+        href: https://github.com/m-yoshida-econ
+        aria-label: GitHub
+  page-footer:
+    center: "© 2026 Masahiro Yoshida"
+
+format:
+  html:
+    theme: [default, styles.scss]
+    toc: false
+    page-layout: article
+    link-external-newwindow: true
+    lang: en
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    include-after-body:
+      text: |
+        <script>
+        document.addEventListener("click", function (ev) {
+          var b = ev.target.closest(".pub-cite-btn");
+          if (b) { ev.preventDefault(); var t = document.getElementById(b.dataset.target); if (t) t.hidden = !t.hidden; return; }
+          var c = ev.target.closest(".pub-cite-copy");
+          if (c) {
+            var code = c.parentElement.querySelector("code").innerText;
+            navigator.clipboard.writeText(code).then(function () { c.textContent = "Copied"; setTimeout(function () { c.textContent = "Copy"; }, 1500); });
+          }
+        });
+        </script>
+

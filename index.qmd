@@ -1,0 +1,43 @@
+---
+title: ""
+pagetitle: "Masahiro Yoshida"
+---
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4 .home-photo}
+![](img/photo.jpg){fig-alt="Portrait of Masahiro Yoshida"}
+:::
+
+::: {.g-col-12 .g-col-md-8 .home-bio}
+<p class="home-name">Masahiro (Masa) Yoshida</p>
+<p class="home-affil">Associate Professor (tenure-track)<br>
+Faculty of Political Science and Economics, Waseda University</p>
+
+Welcome to my website! I am an Associate Professor (tenure-track) at the Department of Political Science and Economics, Waseda University.
+
+<ul class="contact-list">
+<li><i class="bi bi-envelope"></i> m.yoshida [at] waseda.jp</li>
+<li><i class="bi bi-file-earmark-pdf"></i> <a href="cv.pdf">Curriculum Vitae</a> (PDF, September 29, 2026)</li>
+<li><i class="bi bi-github"></i> <a href="https://github.com/m-yoshida-econ">GitHub</a></li>
+</ul>
+:::
+
+:::
+
+<dl class="home-fields">
+<dt>Fields</dt>
+<dd>Applied econometrics, labor economics, environmental economics, and macroeconomics</dd>
+<dt>Interests</dt>
+<dd>Climate change and the reallocation of work, automation, immigration and aging</dd>
+<dt>Methods</dt>
+<dd>Applied econometrics, structural modeling, and experiments</dd>
+</dl>
+
+<p class="home-note">Dear workshop organizers: I'm happy to present my recent works. Please feel free to contact me.</p>
+
+## Recent Talks
+
+::: {.talks}
+{{< include talks.md >}}
+:::

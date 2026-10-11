@@ -1,0 +1,95 @@
+/*-- scss:defaults --*/
+// Minimal academic look: serif headings + sans body (cf. xinchengqiu.com).
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$font-family-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 700;
+$font-size-base: 1.0rem;
+$line-height-base: 1.65;
+
+$body-color: #222;
+$body-bg: #fff;
+$primary: #1f3a5f;      // deep navy for links / accents
+$waseda-red: #8E1729;   // WASEDA RED (R142 G23 B40)
+$link-color: $primary;
+$link-hover-color: #142741;
+$link-decoration: none;
+
+$navbar-bg: #fff;
+$navbar-fg: #222;
+$navbar-hl: $primary;
+$navbar-padding-y: 0.9rem;
+
+$footer-bg: #fff;
+$footer-fg: #777;
+
+/*-- scss:rules --*/
+// ---- layout ----
+body { -webkit-font-smoothing: antialiased; }
+#quarto-content > * { max-width: 860px; margin-left: auto; margin-right: auto; }
+.quarto-title-block .quarto-title h1.title { font-size: 1.7rem; margin-bottom: 1.2rem; }
+h2 { font-size: 1.45rem; font-weight: 400; font-style: italic; margin-top: 2.4rem;
+     padding-bottom: .4rem; border-bottom: 1px solid #888; }
+h3 { font-size: 1.1rem; margin-top: 1.6rem; }
+
+// ---- navbar ----
+.navbar { border-bottom: 1px solid #e5e5e5; box-shadow: none; }
+.navbar .navbar-brand { font-family: $font-family-serif; font-weight: 700; font-size: 1.25rem; }
+.navbar .nav-link { font-weight: 500; }
+.navbar .nav-link.active { color: $primary !important; font-weight: 600; }
+.navbar .navbar-nav .nav-link:hover { color: $primary; }
+
+// ---- home ----
+.home-photo img { width: 100%; max-width: 230px; border-radius: 4px; display: block; }
+.home-name { font-family: $font-family-serif; font-size: 2rem; font-weight: 700; margin: 0 0 .2rem 0; line-height: 1.2; }
+.home-affil { color: #555; margin-bottom: 1rem; }
+.home-bio p { margin-bottom: .8rem; }
+.contact-list { list-style: none; padding-left: 0; margin-top: .6rem; }
+.contact-list li { margin-bottom: .25rem; }
+.contact-list i { width: 1.4rem; color: #555; }
+
+.home-fields { display: grid; grid-template-columns: 7rem 1fr; column-gap: 1rem; row-gap: .35rem;
+               margin: 1.6rem 0 1.2rem 0; }
+.home-fields dt { font-family: $font-family-serif; font-weight: 700; }
+.home-fields dd { margin: 0; }
+@media (max-width: 575px) { .home-fields { grid-template-columns: 1fr; } .home-fields dd { margin-bottom: .5rem; } }
+
+.home-note { color: #444; font-style: italic; }
+.talks ul { list-style: none; padding-left: 0; }
+.talks li { padding: .3rem 0; border-bottom: 1px dotted #ddd; }
+
+// ---- research list (Wowchemy-like) ----
+.pub { margin-bottom: 1.6rem; }
+.pub-title { font-family: $font-family-serif; font-weight: 700; font-size: 1.2rem; line-height: 1.35; }
+.pub-authors { color: #555; font-size: .95rem; }
+.pub-meta { color: #444; font-size: .95rem; font-family: $font-family-serif; }
+.pub-meta .dot { padding: 0 .5rem; color: #999; }
+.pub-status { }
+.pub-journal { font-style: italic; font-weight: 700; }
+.pub-links { margin-top: .35rem; }
+.pub-links a {
+  display: inline-block; font-family: $font-family-serif; font-size: .82rem;
+  padding: 0 .55rem; margin: .15rem .35rem .15rem 0; line-height: 1.65;
+  border: 1px solid $waseda-red; border-radius: 3px; color: $waseda-red; background: #fff;
+}
+.pub-links a:hover { background: $waseda-red; color: #fff; }
+.pub-cite { margin: .4rem 0 .2rem 0; position: relative; }
+.pub-cite pre { background: #f7f7f7; border: 1px solid #e2e2e2; border-radius: 3px;
+                padding: .6rem .8rem; font-size: .8rem; margin: 0; white-space: pre; overflow-x: auto; }
+.pub-cite .pub-cite-copy { position: absolute; top: .35rem; right: .4rem; font-size: .75rem;
+  padding: 0 .5rem; border: 1px solid #bbb; border-radius: 3px; background: #fff; color: #444; cursor: pointer; }
+.pub-cite .pub-cite-copy:hover { border-color: $waseda-red; color: $waseda-red; }
+.pub-talks { color: #777; font-size: .86rem; margin-top: .3rem; }
+.pub details { margin-top: .3rem; }
+.pub details summary { cursor: pointer; font-size: .85rem; color: #555; }
+.pub details p { font-size: .93rem; color: #333; margin: .4rem 0 0 0; text-align: justify; }
+
+// ---- footer ----
+.nav-footer { border-top: 1px solid #e5e5e5; font-size: .85rem; }
+
+// ---- print: keep ink low ----
+@media print {
+  .navbar, .nav-footer { display: none; }
+  .pub-links a { border: none; padding: 0; }
+  a[href]::after { content: none !important; }
+}
