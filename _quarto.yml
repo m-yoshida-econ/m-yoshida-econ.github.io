@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: _site
   post-render: scripts/strip_generator.sh
+  render:
+    - "*.qmd"
+    - "!talks.md"
   resources:
     - cv.pdf
     - papers/
