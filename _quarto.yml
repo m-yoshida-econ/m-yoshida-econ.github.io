@@ -22,20 +22,22 @@ website:
       - text: "Research"
         href: research.qmd
       - text: "CV"
-        href: cv.qmd
+        href: cv.pdf
     right:
       - icon: envelope
         href: "mailto:m.yoshida@waseda.jp"
         aria-label: Email
-      - icon: github
-        href: https://github.com/m-yoshida-econ
-        aria-label: GitHub
+      # - icon: linkedin
+      #   href: https://www.linkedin.com/in/XXXX   # TODO: LinkedIn の URL を入れる
+      #   aria-label: LinkedIn
   page-footer:
     center: "© 2026 Masahiro Yoshida"
 
 format:
   html:
-    theme: [default, styles.scss]
+    theme:
+      light: [default, styles.scss]
+      dark: [default, styles.scss, dark.scss]
     toc: false
     page-layout: article
     link-external-newwindow: true

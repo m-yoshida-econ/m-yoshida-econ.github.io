@@ -19,12 +19,18 @@ Welcome to my website! I am an Associate Professor (tenure-track) at the Departm
 <ul class="contact-list">
 <li><i class="bi bi-envelope"></i> m.yoshida [at] waseda.jp</li>
 <li><i class="bi bi-file-earmark-pdf"></i> <a href="cv.pdf">Curriculum Vitae</a> (PDF, September 29, 2026)</li>
-<li><i class="bi bi-github"></i> <a href="https://github.com/m-yoshida-econ">GitHub</a></li>
+<!-- TODO: LinkedIn の URL をもらったら有効化
+<li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/XXXX">LinkedIn</a></li>
+-->
 </ul>
 :::
 
 :::
 
+::: {.grid .home-cols}
+
+::: {.g-col-12 .g-col-md-6}
+### Research
 <dl class="home-fields">
 <dt>Fields</dt>
 <dd>Applied econometrics, labor economics, environmental economics, and macroeconomics</dd>
@@ -33,6 +39,19 @@ Welcome to my website! I am an Associate Professor (tenure-track) at the Departm
 <dt>Methods</dt>
 <dd>Applied econometrics, structural modeling, and experiments</dd>
 </dl>
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### Education
+<ul class="edu-list">
+<li><i class="bi bi-mortarboard-fill"></i><div><div class="edu-degree">Ph.D. in Economics, 2020</div><div class="edu-inst">Washington University in St. Louis</div></div></li>
+<li><i class="bi bi-mortarboard-fill"></i><div><div class="edu-degree">M.A. in Economics, 2016</div><div class="edu-inst">Washington University in St. Louis</div></div></li>
+<li><i class="bi bi-mortarboard-fill"></i><div><div class="edu-degree">M.A. in Economics, 2014</div><div class="edu-inst">The University of Tokyo</div></div></li>
+<li><i class="bi bi-mortarboard-fill"></i><div><div class="edu-degree">B.A. in Economics, 2010</div><div class="edu-inst">The University of Tokyo</div></div></li>
+</ul>
+:::
+
+:::
 
 <p class="home-note">Dear workshop organizers: I'm happy to present my recent works. Please feel free to contact me.</p>
 

@@ -79,6 +79,8 @@ make_bibtex <- function(e) {
   f <- list(title = e$title, author = e$author)
   if (is_pub) f$journal <- e$journal
   f$year <- e$year
+  if (is_pub) { f$volume <- e$volume; f$number <- e$number; f$pages <- e$pages; f$doi <- e$doi }
+  f <- Filter(Negate(is.null), f)
   if (!is.null(e$month)) f$month <- month.abb[as.integer(e$month)]
   if (!is_pub) {
     note <- c(if (!is.null(e$status)) paste(e$status, if (!is.null(e$journal)) paste("at", e$journal)),
@@ -107,7 +109,11 @@ render_entry <- function(e, me = "Masahiro Yoshida") {
 
   # --- meta line: "Month Year · Status at <journal>" ---
   date <- paste(c(month_name(e$month), e$year), collapse = " ")
-  journal <- if (!is.null(e$journal)) sprintf('<span class="pub-journal">%s</span>', tex2html(e$journal)) else NULL
+  journal <- if (!is.null(e$journal)) {
+    vol <- if (!is.null(e$volume)) paste0(" ", e$volume, if (!is.null(e$number)) paste0("(", e$number, ")")) else ""
+    pg  <- if (!is.null(e$pages)) paste0(", ", gsub("--", "&ndash;", e$pages)) else ""
+    sprintf('<span class="pub-journal">%s</span>%s%s', tex2html(e$journal), vol, pg)
+  } else NULL
   status  <- if (!is.null(e$status)) tex2html(e$status) else NULL
   venue <- if (!is.null(status) && !is.null(journal)) {
     sprintf('<span class="pub-status">%s at %s</span>', status, journal)
@@ -122,7 +128,7 @@ render_entry <- function(e, me = "Masahiro Yoshida") {
   links <- c(
     link_btn(e$url_pdf,       "PDF"),
     link_btn(e$url_pub,       "Journal"),
-    link_btn(e$url_doi,       "DOI"),
+    link_btn(if (!is.null(e$doi)) paste0("https://doi.org/", e$doi) else e$url_doi, "DOI"),
     link_btn(e$url_slides,    "Slides"),
     link_btn(e$url_ssrn,      "SSRN"),
     link_btn(e$url_iza,       "IZA DP"),

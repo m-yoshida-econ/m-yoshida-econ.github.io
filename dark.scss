@@ -1,0 +1,14 @@
+/*-- scss:defaults --*/
+// Dark variant: only colours change; layout/typography come from styles.scss.
+$body-color: #e6e6e6;
+$body-bg: #15171a;
+$ink: #e6e6e6;
+$muted: #a7adb5;
+$rule: #2c3036;
+$rule-strong: #5a6069;
+$surface: #1f2226;
+$primary: #8fb3e6;        // lighter navy for links on dark
+$waseda-red: #e0657a;     // lighter crimson for contrast on dark
+
+/*-- scss:rules --*/
+.home-photo img { filter: brightness(.95); }
