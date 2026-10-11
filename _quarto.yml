@@ -27,9 +27,9 @@ website:
       - icon: envelope
         href: "mailto:m.yoshida@waseda.jp"
         aria-label: Email
-      # - icon: linkedin
-      #   href: https://www.linkedin.com/in/XXXX   # TODO: LinkedIn の URL を入れる
-      #   aria-label: LinkedIn
+      - icon: linkedin
+        href: https://www.linkedin.com/in/masahiro-yoshida-8481928a/
+        aria-label: LinkedIn
   page-footer:
     center: "© 2026 Masahiro Yoshida"
 

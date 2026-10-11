@@ -115,6 +115,8 @@ render_entry <- function(e, me = "Masahiro Yoshida") {
     sprintf('<span class="pub-journal">%s</span>%s%s', tex2html(e$journal), vol, pg)
   } else NULL
   status  <- if (!is.null(e$status)) tex2html(e$status) else NULL
+  if (!is.null(status) && !is.null(e$status_note))
+    status <- paste0(status, ' <span class="pub-status-note">(', tex2html(e$status_note), ')</span>')
   venue <- if (!is.null(status) && !is.null(journal)) {
     sprintf('<span class="pub-status">%s at %s</span>', status, journal)
   } else if (!is.null(status)) {
