@@ -1,0 +1,58 @@
+---
+title: "Teaching"
+---
+
+```{r}
+#| include: false
+source("R/statements.R")
+```
+
+```{r}
+#| results: asis
+#| echo: false
+statement_buttons("teaching_statement", "Teaching Statement")
+```
+
+## Waseda University
+
+<p class="teach-sub">Faculty of Political Science and Economics, September 2020–present</p>
+
+::: {.teach}
+### Undergraduate
+
+- **Population Economics (Labor Economics)**\
+  English: Fall 2020–2026 · Japanese: Spring 2021–2026
+- **Applied Econometrics**\
+  Japanese: Spring 2022, Fall 2023–2026
+- **Intermediate Seminar on Causal Inference**\
+  English: Spring 2023, Fall 2024–2026
+- **Basic Seminar for First-Year Students**\
+  English: Fall 2020–2023 · Japanese: Spring 2024–2026
+- **Academic Literacy Seminar**\
+  Japanese: Fall 2020, Spring 2021–2022
+
+### Graduate
+
+- **Population Economics (Labor Economics)**\
+  English: Fall 2020–2022, Spring 2023–2026
+:::
+
+## Teaching Assistant
+
+::: {.teach}
+- **Health Economics** (undergraduate), for Grace Johnson\
+  Washington University in St. Louis, 2018
+- **Introductory Microeconomics** (undergraduate), for Brian Rogers\
+  Washington University in St. Louis, 2018
+- **International Trade** (graduate), for Michal Fabinger\
+  The University of Tokyo, 2013
+- **Game Theory** (graduate and undergraduate), for Akihiko Matsui\
+  The University of Tokyo, 2013
+:::
+
+## Mentoring
+
+::: {.teach}
+- **Ph.D. Workshop at Waseda** (co-organizer, April 2021–present)\
+  Mentees: Ritsu Kitagawa (Spring 2021), Yijie Tao (Fall 2021), Aline Mortha (Spring 2022), Yayue Xiao (Fall 2022), Haonan Li and Pengsheng Zhao (Spring/Fall 2023), Ruiqi Tang (Spring 2024), Yayue Xiao (Fall 2024), Takanobu Toshikawa and Luxin Zhang (Spring 2025), Amadu Jalloh and Yuki Kanno (Fall 2025), Hibiki Kamoshita (Spring 2026)
+:::

@@ -5,9 +5,11 @@ project:
   render:
     - "*.qmd"
     - "!talks.md"
+    - "!works.md"
   resources:
     - cv.pdf
     - papers/
+    - statements/
 
 website:
   title: "Masahiro Yoshida"
@@ -21,6 +23,10 @@ website:
         href: index.qmd
       - text: "Research"
         href: research.qmd
+      - text: "Non-Refereed Works"
+        href: works.qmd
+      - text: "Teaching"
+        href: teaching.qmd
       - text: "CV"
         href: cv.pdf
     right:

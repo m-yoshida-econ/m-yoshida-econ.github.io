@@ -10,7 +10,11 @@ GitHub Actions が render して GitHub Pages に公開する（ワークフロ�
 - `index.qmd` : Home（`talks.md` を include して Recent Talks を表示）
 - `talks.md` : Recent Talks の正本。1 行 1 件、新しい順に書く
 - `research.qmd` : Research（`papers.bib` を読んで自動描画）
-- `cv.qmd`, `cv.pdf` : CV（PDF は `cv.pdf` の名前で上書き更新）
+- `works.qmd`, `works.md` : Non-Refereed Works（非査読記事と本。`works.md` が正本）
+- `teaching.qmd` : Teaching（授業歴は qmd に直接書く）
+- `statements/` : Research / Teaching Statement の PDF 置き場
+- `R/statements.R` : Statement ボタン（PDF があればリンク、なければ coming soon）
+- `cv.pdf` : CV（ナビの CV から直接開く。同じ名前で上書き更新）
 - `papers.bib` : 論文リストの正本
 - `papers/` : 論文・スライド・記事の PDF（Wix から移管済み）
 - `R/render_bib.R` : bib を読んで HTML にする関数（base R のみ）
@@ -20,9 +24,13 @@ GitHub Actions が render して GitHub Pages に公開する（ワークフロ�
 ## 日常更新
 
 - 発表を追加: `talks.md` の先頭に 1 行足す → push。
+- 非査読記事・本を追加: `works.md` の該当セクション先頭に足す → push。
+- Statement を公開: 次の名前で `statements/` に PDF を置く → push。
+  `research_statement_en.pdf` / `research_statement_ja.pdf` /
+  `teaching_statement_en.pdf` / `teaching_statement_ja.pdf`
 
 1. `papers.bib` にエントリを 1 つ追加（`section` は必須。
-   `wp_revision` / `wp` / `pub` / `nonref` / `wip` のどれか）。
+   `wp_revision` / `wp` / `pub` / `wip` のどれか）。
 2. `quarto preview` で確認。
 3. `git add -A && git commit -m "..." && git push`。
 

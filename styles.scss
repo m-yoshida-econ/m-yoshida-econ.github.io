@@ -67,10 +67,11 @@ h3 { font-size: 1.1rem; margin-top: 1.6rem; }
 
 .home-note { color: $ink; font-style: italic; margin-top: 1.4rem; }
 .talks ul { list-style: none; padding-left: 0; }
-.talks li { font-family: $font-family-serif; font-size: 1.08rem; font-weight: 600; color: $ink;
+.talks li { font-family: $font-family-serif; font-size: 1.08rem; font-weight: 400; color: $ink;
             padding: .4rem 0; border-bottom: 1px dotted $rule-strong; }
-.talks li::first-line { }
+.talks li strong { font-weight: 600; }
 .talks .talk-date { font-weight: 700; color: $waseda-red; }
+.home-jm { font-weight: 700; color: $waseda-red; margin: .2rem 0 .8rem 0; }
 
 // ---- research list (Wowchemy-like) ----
 .pub { margin-bottom: 1.7rem; }
@@ -97,6 +98,31 @@ h3 { font-size: 1.1rem; margin-top: 1.6rem; }
 .pub details { margin-top: .3rem; }
 .pub details summary { cursor: pointer; font-size: .9rem; color: $ink; font-weight: 500; }
 .pub details p { font-size: .95rem; color: $ink; margin: .4rem 0 0 0; text-align: justify; }
+
+// ---- statement buttons (Research / Teaching) ----
+.stmt-links { display: flex; flex-wrap: wrap; gap: .6rem; margin: .2rem 0 1.2rem 0; }
+.stmt-btn {
+  display: inline-block; font-family: $font-family-serif; font-size: .95rem;
+  padding: .3rem .9rem; border: 1px solid $waseda-red; border-radius: 3px; color: $waseda-red;
+}
+a.stmt-btn:hover { background: $waseda-red; color: #fff; }
+.stmt-btn.is-dummy { border-style: dashed; border-color: $rule-strong; color: $muted; cursor: not-allowed; }
+.stmt-btn.is-dummy small { font-size: .75em; margin-left: .3rem; }
+
+// ---- Non-Refereed Works / Teaching lists (written in plain markdown) ----
+.works ul, .teach ul { list-style: none; padding-left: 0; }
+.works li, .teach li { margin-bottom: 1.2rem; font-family: $font-family-serif; font-size: 1.02rem; color: $ink; }
+.works li strong, .teach li strong { font-size: 1.12rem; }
+.works li em { font-weight: 700; }
+.works li a {
+  display: inline-block; font-size: .85rem; padding: 0 .55rem; margin: .3rem .35rem 0 0; line-height: 1.65;
+  border: 1px solid $waseda-red; border-radius: 3px; color: $waseda-red;
+}
+.works li a:hover { background: $waseda-red; color: #fff; }
+.teach h3 { font-family: $font-family-sans-serif; font-size: .82rem; font-weight: 700; letter-spacing: .08em;
+            text-transform: uppercase; color: $waseda-red; margin: 1.2rem 0 .6rem 0; }
+.teach li { margin-bottom: .8rem; }
+.teach-sub { color: $muted; font-style: italic; margin-top: -.3rem; }
 
 // ---- footer ----
 .nav-footer { border-top: 1px solid $rule; font-size: .85rem; }

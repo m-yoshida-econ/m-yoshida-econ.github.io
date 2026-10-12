@@ -5,7 +5,14 @@ title: "Research"
 ```{r}
 #| include: false
 source("R/render_bib.R")
+source("R/statements.R")
 bib <- read_bib("papers.bib")
+```
+
+```{r}
+#| results: asis
+#| echo: false
+statement_buttons("research_statement", "Research Statement")
 ```
 
 ## Under Revision
@@ -30,14 +37,6 @@ render_section(bib, "wp")
 #| results: asis
 #| echo: false
 render_section(bib, "pub")
-```
-
-## Non-Refereed Publications
-
-```{r}
-#| results: asis
-#| echo: false
-render_section(bib, "nonref")
 ```
 
 ## Selected Work in Progress

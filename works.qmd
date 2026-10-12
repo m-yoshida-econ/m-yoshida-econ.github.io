@@ -1,0 +1,7 @@
+---
+title: "Non-Refereed Works"
+---
+
+::: {.works}
+{{< include works.md >}}
+:::

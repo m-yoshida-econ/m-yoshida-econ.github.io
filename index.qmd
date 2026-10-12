@@ -11,10 +11,10 @@ pagetitle: "Masahiro Yoshida"
 
 ::: {.g-col-12 .g-col-md-8 .home-bio}
 <p class="home-name">Masahiro (Masa) Yoshida</p>
-<p class="home-affil">Associate Professor (tenure-track)<br>
-Faculty of Political Science and Economics, Waseda University</p>
 
-Welcome to my website! I am an Associate Professor (tenure-track) at the Department of Political Science and Economics, Waseda University.
+Welcome to my website! I am an Associate Professor (tenure-track) at the Faculty of Political Science and Economics, Waseda University.
+
+<p class="home-jm">I am on the academic job market in Fall/Winter 2026.</p>
 
 <ul class="contact-list">
 <li><i class="bi bi-envelope"></i> m.yoshida [at] waseda.jp</li>
