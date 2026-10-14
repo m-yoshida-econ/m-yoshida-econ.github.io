@@ -10,7 +10,7 @@ source("R/statements.R")
 ```{r}
 #| results: asis
 #| echo: false
-statement_buttons("teaching_statement", "Teaching Statement")
+statement_buttons("Yoshida_TeachingStatement", "Teaching Statement")
 ```
 
 ## Waseda University

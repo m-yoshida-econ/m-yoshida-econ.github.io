@@ -1,9 +1,9 @@
 # Statement buttons (English / Japanese).
-# Put the PDF at statements/<base>_en.pdf or statements/<base>_ja.pdf and the
+# Put the PDF at statements/<base>_EN.pdf or statements/<base>_JA.pdf and the
 # button becomes a live link on the next render; until then it shows as a
 # greyed-out "coming soon" button.
 statement_buttons <- function(base, label) {
-  langs <- c(en = "English", ja = "日本語")
+  langs <- c(EN = "English", JA = "日本語")
   btns <- vapply(names(langs), function(l) {
     f <- sprintf("statements/%s_%s.pdf", base, l)
     txt <- sprintf('<i class="bi bi-file-earmark-pdf"></i> %s (%s)', label, langs[[l]])

@@ -11,22 +11,22 @@ CV（2026-09-29 版）の "Non-Refereed Publications" と "Books" から作成�
 - **Global Warming Fuels Unemployment Rate in Summer**\
   *Open Access Government*, 2026\
   [Website](https://www.openaccessgovernment.org/article/global-warming-fuels-unemployment-rate-in-summer/203353/)
-  [Article (PDF)](papers/yoshida2026oag_unemployment_article.pdf)
+  [Article (PDF)](papers/Yoshida_OAG2026_Unemployment.pdf)
 
 - **Climate Change Reduced the Labour Share in the 21st Century**\
   *Open Access Government*, 2025\
   [Website](https://www.openaccessgovernment.org/article/climate-change-reduced-the-labour-share-in-the-21st-century/197834/)
-  [Article (PDF)](papers/yoshida2025oag_laborshare_article.pdf)
+  [Article (PDF)](papers/Yoshida_OAG2025_LaborShare.pdf)
 
 - **Climate Change and the Rise of Adult Male Dropouts**\
   *Open Access Government*, 2025\
   [Website](https://www.openaccessgovernment.org/article/climate-change-and-the-rise-of-adult-male-dropouts/193257/)
-  [Article (PDF)](papers/yoshida2025oag_dropouts_article.pdf)
+  [Article (PDF)](papers/Yoshida_OAG2025_MaleDropouts.pdf)
 
 - **The Impact of the Introduction of Industrial Robots on Workplace Injury Risk and Mortality**\
   *Impact*, 2025\
   [Website](https://www.ingentaconnect.com/contentone/sil/impact/2025/00002025/00000001/art00018)
-  [Article (PDF)](papers/yoshida2025impact_robots_article.pdf)
+  [Article (PDF)](papers/Yoshida_Impact2025_Robots.pdf)
 
 ## Books (in Japanese)
 

@@ -28,8 +28,8 @@ GitHub Actions が render して GitHub Pages に公開する（ワークフロ�
 - 発表を追加: `talks.md` の先頭に 1 行足す → push。
 - 非査読記事・本を追加: `works.md` の該当セクション先頭に足す → push。
 - Statement を公開: 次の名前で `statements/` に PDF を置く → push。
-  `research_statement_en.pdf` / `research_statement_ja.pdf` /
-  `teaching_statement_en.pdf` / `teaching_statement_ja.pdf`
+  `Yoshida_ResearchStatement_EN.pdf` / `Yoshida_ResearchStatement_JA.pdf` /
+  `Yoshida_TeachingStatement_EN.pdf` / `Yoshida_TeachingStatement_JA.pdf`
 
 1. `papers.bib` にエントリを 1 つ追加（`section` は必須。
    `wp_revision` / `wp` / `pub` / `wip` のどれか）。
@@ -45,7 +45,8 @@ GitHub Actions が render して GitHub Pages に公開する（ワークフロ�
 - 素材フォルダ `~/Dropbox/website:` はフォルダ名のコロンが Quarto の
   テーマコンパイルを壊すため、プロジェクトは `~/Dropbox/m-yoshida-econ.github.io`
   に置いている。
-- 論文 PDF は `papers/` にある（ファイル名は bib のキー＋`_slides`/`_article`）。
+- 論文 PDF は `papers/` にある。ファイル名は `Yoshida_短い名前.pdf`（共著は
+  `Yoshida_共著者_短い名前.pdf`、スライドは末尾 `_slides`）。
   新しい版は同じファイル名で上書きすれば bib を触らずに済む。
 - `CNAME` は DNS 切替の直前に追加する（先に置くと github.io での確認が
   リダイレクトされてしまう）。

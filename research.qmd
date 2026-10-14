@@ -12,7 +12,7 @@ bib <- read_bib("papers.bib")
 ```{r}
 #| results: asis
 #| echo: false
-statement_buttons("research_statement", "Research Statement")
+statement_buttons("Yoshida_ResearchStatement", "Research Statement")
 ```
 
 ## Under Revision
