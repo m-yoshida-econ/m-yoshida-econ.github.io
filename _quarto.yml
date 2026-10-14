@@ -1,7 +1,9 @@
 project:
   type: website
   output-dir: _site
-  post-render: scripts/strip_generator.sh
+  post-render:
+    - scripts/strip_generator.sh
+    - scripts/copy_legacy.sh
   render:
     - "*.qmd"
     - "!talks.md"

@@ -19,6 +19,8 @@ GitHub Actions が render して GitHub Pages に公開する（ワークフロ�
 - `papers/` : 論文・スライド・記事の PDF（Wix から移管済み）
 - `R/render_bib.R` : bib を読んで HTML にする関数（base R のみ）
 - `scripts/strip_generator.sh` : render 後に generator メタタグを削除
+- `legacy_urls.tsv`, `scripts/copy_legacy.sh` : 旧 Wix の PDF リンクを生かす。
+  対応表の各行のファイルを `_files/ugd/` に旧名でコピーする（常に最新版が開く）
 - `img/photo.jpg` : 写真（900px に縮小済み）
 
 ## 日常更新
@@ -35,6 +37,10 @@ GitHub Actions が render して GitHub Pages に公開する（ワークフロ�
 3. `git add -A && git commit -m "..." && git push`。
 
 ## 注意
+
+- Wix で PDF を上げ直すと URL が変わる。DNS 切替までに Wix で上げた PDF の URL は
+  `legacy_urls.tsv` に 1 行足す。
+- `papers/` のファイル名は書類に載るので、DNS 切替後は変えない。
 
 - 素材フォルダ `~/Dropbox/website:` はフォルダ名のコロンが Quarto の
   テーマコンパイルを壊すため、プロジェクトは `~/Dropbox/m-yoshida-econ.github.io`
